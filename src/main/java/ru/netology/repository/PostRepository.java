@@ -48,17 +48,17 @@ public class PostRepository {
                 }
             }
         }
-            listPost.add(post);
-            return post;
-        }
+        listPost.add(post);
+        return post;
+    }
 
-        public void removeById ( long id){
-            for (Post post : listPost) {
-                if (post.getId() == id) {
-                    listPost.remove(post);
-                } else {
-                    System.out.println("Нет такого ID!");
-                }
+    public void removeById(long id) {
+        for (Post post : listPost) {
+            if (post.getId() == id) {
+                listPost.remove(post);
+            } else {
+                System.out.println("Нет такого ID!");
             }
         }
     }
+}
